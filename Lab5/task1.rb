@@ -3,7 +3,7 @@ def prm(a, b, func, accuracy = 0.001)
     dx = (b - a) / n
     sum = 0
     x = a + dx / 2
-  
+
     n.times do
       sum += func.call(x) * dx
       x += dx
@@ -25,7 +25,7 @@ def prm(a, b, func, accuracy = 0.001)
   end
   
   f1 = ->(x) { x*((1+x)**1/3) }
-  f2 = ->(x) { 1 / (3 + Math.cos(x))}
+  f2 = ->(x) { 1 / (x * (Math.log(x)**2))}
   x = prm(1.0, 8.0,  f1);
   puts x, "\n"
   x = trp(1.0, 8.0,  f1);
