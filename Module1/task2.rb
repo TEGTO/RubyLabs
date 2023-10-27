@@ -1,3 +1,4 @@
+#Варіант 6
 def Foo(a, b, c, x)
     if(c < 0 and b != 0)
         return a*(x**2)+(b**2)*x

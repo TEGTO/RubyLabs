@@ -1,3 +1,4 @@
+#Варіант 6
 class Apartment
     attr_accessor :id, :apartment_number, :area, :floor, :number_of_rooms, :street, :building_type, :operation_period
   
